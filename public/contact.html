@@ -11,17 +11,10 @@
     />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      href="css/animate.min.css"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="../node_modules/owl.carousel/dist/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="../node_modules/lightbox2/dist/css/lightbox.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/lightbox.min.css">
     <link rel="stylesheet" href="css/main.css" />
     <title>Freelancer</title>
   </head>
@@ -47,13 +40,15 @@
             <div class="border-bottom"></div>
             <p class="lead my-3">Lorem ipsum dolor sit amet.</p>
 
-            <form action="">
+            <form data-netlify="true" data-netlify-recaptcha="true"
+            method="POST">
                 <div class="form-fields">
                     <input type="text" name="fullname" id="fullname" placeholder="Name" class="input name">
                     <input type="text" name="subject" id="subject" placeholder="Subject" class="input subject">
                     <input type="email" name="email" id="email" placeholder="Email" class="input email">
                     <input type="text" name="phone" id="phone" placeholder="Phone" class="input phone">
                     <textarea name="message" id="message" placeholder="Message" class="input message"></textarea>
+                    <div data-netlify-recaptcha="true"></div>
                     <button class="btn btn-dark">Submit</button>
                 </div>
             </form>
@@ -95,7 +90,7 @@
      </footer>
 
      <script src="js/jquery.min.js"></script>
-     <script src="../node_modules/lightbox2/dist/js/lightbox.min.js"></script>
+     <script src="js/lightbox.min.js"></script>
 
   </body>
 </html>
